@@ -30,10 +30,10 @@ export const WeatherDetailsCard: React.FC<IWeatherDetailsCardProps> = ({
             <div className="text-4xl md:text-[6rem] font-semibold mb-6 md:mb-12 break-words">
               {`${weatherDetails?.main?.temp?.toFixed(1)} `}&deg;C
             </div>
-            <p className="text-gray-300 font-medium text-2xl mb-4 md:text-[3rem] text-center md:mb-8 text-wrap leading-normal">
+            <p className="text-gray-900 md:text-gray-300 font-medium text-2xl mb-4 md:text-[3rem] text-center md:mb-8 text-wrap leading-normal">
               {`${weatherDetails?.name}, ${weatherDetails?.sys?.country}`}
             </p>
-            <p className="text-gray-300 font-medium text-xl md:text-[2rem] mb-2 break-words">
+            <p className="text-gray-900 md:text-gray-300 font-medium text-xl md:text-[2rem] mb-2 break-words">
               {weatherDetails?.weather?.[0]?.description}
             </p>
           </div>
@@ -45,19 +45,19 @@ export const WeatherDetailsCard: React.FC<IWeatherDetailsCardProps> = ({
               alt=""
               className="w-24 h-24 md:w-32 md:h-32"
             />
-            <p className="text-xl md:text-[2rem] text-gray-300 font-normal break-words">
+            <p className="text-xl md:text-[2rem] text-gray-900 md:text-gray-300 font-normal break-words">
               <span>Feels like</span>
               <span className="font-semibold ms-2 md:ms-6">
                 {`${weatherDetails?.main?.feels_like?.toFixed(1)} `}&deg;C
               </span>
             </p>
-            <p className="text-xl md:text-[2rem] text-gray-300 font-normal break-words">
+            <p className="text-xl md:text-[2rem] text-gray-900 md:text-gray-300 font-normal break-words">
               <span>Humidity</span>
               <span className="font-semibold ms-2 md:ms-6">
                 {`${weatherDetails?.main?.humidity?.toFixed(1)} %`}
               </span>
             </p>
-            <p className="text-xl md:text-[2rem] text-gray-300 font-normal break-words">
+            <p className="text-xl md:text-[2rem] text-gray-900 md:text-gray-300 font-normal break-words">
               <span>Wind Speed</span>
               <span className="font-semibold ms-2 md:ms-6">
                 {`${weatherDetails?.wind?.speed?.toFixed(1)} kph`}

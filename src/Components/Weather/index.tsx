@@ -88,15 +88,15 @@ export const Weather = () => {
         />
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between gap-4 md:gap-16">
+      <div className="relative flex flex-col md:flex-row justify-between gap-4 md:gap-16">
         <WeatherDetailsCard
           weatherDetails={weatherData}
           selectedCity={selectedCity}
         />
 
         {filteredCities.length > 0 && (
-          <div className="justify-self-center max-h-[70vh] h-full overflow-y-auto w-full md:w-[26rem] mt-4 md:mt-0 p-2 bg-gray-50 rounded-lg shadow-lg border border-gray-300">
-            <ul className="space-y-2">
+          <div className="absolute md:relative top-0 md:top-auto left-0 md:left-auto w-full md:w-[26rem] mt-3 p-2 bg-gray-50 rounded-lg shadow-lg border border-gray-300 z-10 h-min">
+            <ul className="space-y-2 max-h-[61vh] md:max-h-[70vh] overflow-y-auto">
               {filteredCities.map((city) => (
                 <li
                   key={city.id}

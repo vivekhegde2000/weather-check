@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", serif;
+  scroll-behavior: smooth;
+  height: 100vh;
+  /* background: linear-gradient(
+    to bottom,
+    rgb(156, 163, 175),
+    rgb(212, 212, 212)
+  ); */
+  background: url("https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?cs=srgb&dl=pexels-pixabay-257360.jpg&fm=jpg")
+    center no-repeat;
+  background-size: cover;
+  overflow-y: auto;
+}
